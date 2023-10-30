@@ -1,0 +1,24 @@
+:root{
+  --oxfordBlue: #0A122A;
+  --Bone: #E7DECD;
+  --Bole: #804e49;
+  --fuentePrincipal: 'Oswald', sans-serif;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--fuentePrincipal);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background: linear-gradient(to bottom, #01020c, #0b1a49);
+  padding: 0;
+  margin: 0;
+  overflow: hidden scroll;
+}
+/* nav{
+  background-color: black
+} */

@@ -1,0 +1,26 @@
+
+.navegacion{
+    background-color: var(--oxfordBlue);
+    padding: 4rem;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+nav a{
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 25px;
+    transition: .4s;
+}
+nav a:hover{
+    background-color: var(--Bone);
+    color: black;
+    border-radius: 50px;
+    transition: .4s;
+}
