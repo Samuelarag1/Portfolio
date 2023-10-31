@@ -1,15 +1,18 @@
 
 .navegacion{
-    background-color: var(--oxfordBlue);
-    padding: 4rem;
-    margin: 0;
     display: flex;
-    justify-content: flex-end;
+    height: 10rem;
+    width: 100%;
     align-items: center;
-    backdrop-filter: blur(4px);
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    background-color: var(--oxfordBlue);
+    background-color:    rgba(0, 33, 71, .9);
 }
 
 nav a{
+    cursor: pointer;
     margin: 1rem;
     text-decoration: none;
     font-size: 2rem;

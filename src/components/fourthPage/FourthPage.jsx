@@ -1,14 +1,17 @@
+import styles from "./fourthpage.module.css";
 const FourthPage = () => {
   return (
-    <div>
-      <h1>Contacto</h1>
-      <form>
-        <p>Nombre</p>
-        <input type="text" />
+    <div className={styles.container} id="page-4">
+      <div className="form">
+        <form>
+          <h1>Contacto</h1>
+          <p>Nombre</p>
+          <input type="text" />
 
-        <p>Mensaje</p>
-        <textarea name="mensaje" id="mensaje"></textarea>
-      </form>
+          <p>Mensaje</p>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </form>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
+import styles from "./thirdpage.module.css";
 const ThirdPage = () => {
   return (
-    <div>
+    <div className={styles.container} id="page-3">
       <h1>Proyectos</h1>
 
       <div className="cards">
