@@ -2,14 +2,27 @@ import styles from "./fourthpage.module.css";
 const FourthPage = () => {
   return (
     <div className={styles.container} id="page-4">
-      <div className="form">
+      <h1>Gracias por Visitar mi pagina web personal!</h1>
+      <p>
+        Si deseas contactarte conmigo. Te dejo un formulario para que envies tu
+        propuesta!
+      </p>
+      <div className={styles.form}>
         <form>
-          <h1>Contacto</h1>
-          <p>Nombre</p>
-          <input type="text" />
+          <h4>Contacto</h4>
+          <span>Nombre</span>
+          <input type="text" placeholder="Nombre" />
 
-          <p>Mensaje</p>
-          <textarea name="mensaje" id="mensaje"></textarea>
+          <span>Email</span>
+          <input type="text" placeholder="Email" />
+          <span>Mensaje</span>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="Escriba un mensaje..."
+          ></textarea>
+          <hr />
+          <button>Enviar</button>
         </form>
       </div>
     </div>

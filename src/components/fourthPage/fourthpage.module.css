@@ -1,5 +1,88 @@
 .container{
     height: 100vh;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    margin :0;
 }
 
+
+.container h1{
+    text-align: center;
+    color: var(--Bone);
+    font-size: 3.5rem;
+}
+.container p{
+    color: var(--Bone);
+    font-size: 2.5rem;
+}
+
+
+
+form{
+    margin-top: 5rem;
+    border-radius: 1rem;
+    background:var(--colorCards);
+    background-color: rgba(13, 13, 12, 0.88);
+    box-shadow: 2px 2px 20px 2px rgba(0,0,0, 1);
+    backdrop-filter: blur(4px);
+    border: 2px solid #000;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form h4{
+    font-size: 3rem;
+    color: var(--Bone);
+}
+.form span{
+    color: var(--Bone);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+hr{
+    border: 0px solid #585757;
+}
+input{
+    background-color: var(--Bone);
+    width: 30rem;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: auto;
+}
+textarea{
+    background-color: var(--Bone);
+    border: none;
+    border-radius: 5px;
+    width: 30rem;
+    height: 10rem;
+    padding: 0;
+    resize: none;
+}
+
+button{
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-family: var(--fuentePrincipal);
+    background-color: var(--Bone);
+    transition: .3s;
+    font-size: 2rem;
+    color: #000;
+}
+
+button:hover{
+    background-color: var(--oxfordBlue);
+    color: var(--Bone);
+    border: 1px solid var(--Bone);
+    transition: .3s;
+}

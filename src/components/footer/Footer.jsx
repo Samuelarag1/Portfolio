@@ -1,7 +1,8 @@
+import styles from "./footer.module.css";
 const Footer = () => {
   return (
-    <div>
-      <p>Todos los derechos reservados</p>
+    <div className={styles.footer}>
+      <p>Todos los derechos reservados | Samuel Aragon® 2023</p>
     </div>
   );
 };

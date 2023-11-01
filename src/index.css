@@ -3,6 +3,7 @@
   --Bone: #E7DECD;
   --Bole: #804e49;
   --Maize: #F4E76E;
+  --colorCards: #ffffffcc;
   --fuentePrincipal: 'Oswald', sans-serif;
 }
 html {
@@ -13,6 +14,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+*::selection{
+  color: yellow;
+}
+
+
+
 
 body{
   background: linear-gradient(to bottom, #01020c, #0b1a49);
@@ -20,6 +27,3 @@ body{
   margin: 0;
   overflow: hidden scroll;
 }
-/* nav{
-  background-color: black
-} */

@@ -2,14 +2,14 @@
    border: 10px solid black ;
    border-radius: 50%;
    z-index: -1;
-   animation: moverSombra 2s linear infinite alternate-reverse;
+   animation: moverSombra 3s linear infinite alternate-reverse;
    margin: auto;
    margin-top: auto;
 }
 
 @keyframes moverSombra {
    0%{
-      box-shadow:0 0 100px 20px rgba(22, 125, 185, 0.5);
+      box-shadow:0 0 150px 20px rgba(225, 250, 0, 0.5);
    }
    100% {
      box-shadow: 0 0 150px 20px rgba(22, 125, 185, 0.5);
@@ -67,6 +67,7 @@
 .icons a:hover{
    transform: scale(1.2);
    transition: .5s;
-   /* box-shadow: 0px 0px 50px 1px rgba(231, 222, 205, 0.5);
+   /* box-shadow: 0px 0px 10px 0.5px rgba(231, 222, 205, 0.5);
    border-radius: 100%; */
+
  }
