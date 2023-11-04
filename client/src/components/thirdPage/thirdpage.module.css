@@ -1,0 +1,100 @@
+.container{
+    height: 100vh;
+    @media (max-width:768px) {
+        margin-bottom: 45rem;
+    }
+}
+.container h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--Bone);
+}
+.container p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--Bone);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    gap: 5rem;
+    text-align: center;
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card{
+    background-color: var(--colorCards);
+    background-color: rgba(13, 13, 12, 0.88);
+    height: 350px;
+    width: 300px;
+    border-radius: 1.6rem;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    transform-origin: center;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px 1px rgba(0,0,0,1);
+}
+.card a{
+    text-decoration: none;
+}
+
+.cards img{
+    width: 100%;
+    max-width: 100%;
+    transition: .3s;
+}
+.card img:hover{
+    transform: scale( 1.05) ;
+    transition: transform .2s;
+}
+
+.card:hover p{
+    color: #817e7e;
+    transition: .3s;
+}
+.card:hover h4{
+    color: #817e7e;
+    transition: .3s;
+}
+.card:hover span{
+    color: #817e7e;
+    transition: .3s;
+}
+
+
+.card h4{
+    font-size: 2rem;
+    color: black;
+    color: var(--Bone);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    transition: .5s;
+}
+.card p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: black;
+    color: var(--Bone);
+    transition: .5s;
+}
+
+.card span {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: black;
+    color: var(--Bone);
+    transition: .5s;
+}
+
+
