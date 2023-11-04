@@ -37,11 +37,19 @@ const FourthPage = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    if (error.email || error.subject || error.text) {
-      window.alert("Debes completar todos los campos para continuar");
+    if (
+      error.email ||
+      error.subject ||
+      error.text ||
+      re.test(input.email) === false
+    ) {
+      window.alert(
+        "Debes completar correctamente todos los campos para continuar"
+      );
       return;
     }
     enviarDatos();
+    window.alert("Enviado!");
     setInput({
       subject: "",
       email: "",
