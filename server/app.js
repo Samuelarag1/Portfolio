@@ -46,9 +46,19 @@ app.post("/postMessage", async (req, res) => {
   };
   const mensaje = {
     subject: subject,
-    from: `${req.body.email} <${email}>`,
+    from: email,
     to: process.env.USER_EMAIL,
     text: text,
+    html: `
+          <div style="font-family: 'Roboto', sans-serif; color: #333; background-color: #f9f9f9; padding: 20px;">
+            <h1 style="color: #007bff; text-align: center; font-size: 24px;">Este es un correo enviado desde el Portfolio!</h1>
+              <div style="margin-top: 20px;">
+                  <p style="font-size: 16px;"><strong>Nombre:</strong> ${subject}</p>
+                  <p style="font-size: 16px;"><strong>Correo de:</strong> ${email}</p>
+                  <p style="font-size: 16px;"><strong>Mensaje:</strong> ${text}</p>
+              </div>
+          </div>`,
+    importance: "high",
   };
 
   const transport = nodemailer.createTransport(config);

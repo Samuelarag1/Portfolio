@@ -61,7 +61,7 @@ input{
     background-color: var(--Bone);
     width: 30rem;
     border: none;
-    padding: 1.5rem;
+    padding: .5rem;
     border-radius: 5px;
     margin-bottom: auto;
     font-family: var(--fuentePrincipal);

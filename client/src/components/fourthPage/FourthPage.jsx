@@ -68,26 +68,21 @@ const FourthPage = () => {
         <form onSubmit={handleOnSubmit}>
           <h4>Contacto</h4>
 
-          {error.subject !== "" ? (
-            <h6 className={styles.error}>Ingresa un asunto</h6>
-          ) : (
-            ""
-          )}
-          <span>Asunto</span>
+          <span>Nombre</span>
           <input
             name="subject"
             onChange={handleOnChange}
             type="text"
-            placeholder="Asunto"
+            placeholder="Nombre"
             value={input.subject}
             className={error.subject !== "" ? styles.empty : ""}
           />
-
-          {re.test(input.email) === false ? (
-            <h6 className={styles.error}>Ingresa un email valido</h6>
+          {error.subject !== "" ? (
+            <h6 className={styles.error}>Ingresa un nombre</h6>
           ) : (
             ""
           )}
+
           <span>Email</span>
           <input
             value={input.email}
@@ -97,9 +92,8 @@ const FourthPage = () => {
             onChange={handleOnChange}
             className={error.email !== "" ? styles.empty : ""}
           />
-
-          {error.text !== "" ? (
-            <h6 className={styles.error}>Ingresa un mensaje</h6>
+          {re.test(input.email) === false ? (
+            <h6 className={styles.error}>Ingresa un email valido</h6>
           ) : (
             ""
           )}
@@ -113,6 +107,12 @@ const FourthPage = () => {
             value={input.text}
             className={error.text !== "" ? styles.empty : ""}
           ></textarea>
+          {error.text !== "" ? (
+            <h6 className={styles.error}>Ingresa un mensaje</h6>
+          ) : (
+            ""
+          )}
+
           <hr />
           <button type="submit">Enviar</button>
         </form>
