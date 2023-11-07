@@ -18,7 +18,7 @@ const SecondPage = () => {
       name: "React",
       img: "physics.png",
       experience: "1 año",
-      caracteristics: "React-router - and more nqv",
+      caracteristics: "React-router",
       improve: "Redux - Class Component",
     },
     {

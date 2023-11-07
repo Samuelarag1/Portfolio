@@ -18,7 +18,10 @@ const ThirdPage = () => {
           </a>
         </div>
         <div className={styles.card} id="card-2">
-          <a href="https://github.com/Samuelarag1/RickAndMorty" target="__blank">
+          <a
+            href="https://github.com/Samuelarag1/RickAndMorty"
+            target="__blank"
+          >
             <img src="rick&morty.png" width="50px" />
             <h4>Rick and Morty</h4>
             <p>Proyecto FullStack con stack PERN</p>
