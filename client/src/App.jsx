@@ -3,7 +3,7 @@ import FirstPage from "./components/firstPage/FirstPage.jsx";
 import SecondPage from "./components/secondPage/SecondPage.jsx";
 import ThirdPage from "./components/thirdPage/ThirdPage.jsx";
 import FourthPage from "./components/fourthPage/FourthPage.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
   return (
