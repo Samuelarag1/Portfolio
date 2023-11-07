@@ -32,7 +32,10 @@ const FourthPage = () => {
   }, [input]);
 
   const enviarDatos = async () => {
-    await axios.post("http://localhost:3001/postMessage", input);
+    await axios.post(
+      "https://host-contact-form.onrender.com/postMessage",
+      input
+    );
   };
 
   const handleOnSubmit = (e) => {
