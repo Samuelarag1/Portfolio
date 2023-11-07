@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://samuel-aragon.onrender.com",
+  origin: "https://samuel-aragon.vercel.app/",
 };
 app.use(cors(corsOptions));
 // const whitelist = ["http://www.samuelaragon.com"];
