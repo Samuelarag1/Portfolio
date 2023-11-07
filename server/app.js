@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.use(express.json());
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://samuel-aragon.onrender.com",
 };
 app.use(cors(corsOptions));
 // const whitelist = ["http://www.samuelaragon.com"];
