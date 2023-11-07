@@ -11,21 +11,12 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.use(express.json());
 
-const corsOptions = {
-  origin: "https://samuel-aragon.vercel.app/",
-};
-app.use(cors(corsOptions));
-// const whitelist = ["http://www.samuelaragon.com"];
-
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     if (whitelist.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("No permitido por CORS"));
-//     }
-//   },
-// };
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://samuel-aragon.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
 
 app.use(cors(corsOptions));
 
