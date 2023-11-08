@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const nodemailer = require("nodemailer");
 const path = require("path");
@@ -8,13 +9,13 @@ const PORT = 3001;
 
 app.use(express.static(path.join(__dirname, "client", "build")));
 app.use(express.json());
-
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://samuel-aragon.vercel.app");
-  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  next();
-});
+app.use(
+  cors({
+    origin: "https://samuel-aragon.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+  })
+);
 
 app.listen(PORT, () => {
   console.log(`Starting server in PORT: ${PORT}`);
