@@ -87,7 +87,7 @@ textarea{
     }
 }
 
-.form button{
+.container button{
     margin: auto;
     border: none;
     border-radius: 50px;
@@ -99,6 +99,7 @@ textarea{
     font-size: 2rem;
     color: #000;
     margin-bottom: 2rem;
+    margin-top: 0;
     @media (max-width:768px) {
         width: 20rem;
         height: 6rem;
@@ -106,7 +107,7 @@ textarea{
     }
 }
 
-.form button:hover{
+.container button:hover{
     background-color: var(--oxfordBlue);
     color: var(--Bone);
     border: 1px solid var(--Bone);
