@@ -1,0 +1,46 @@
+{
+    "projects": [
+    {
+        "id": 1,
+        "name" : "Dolar | Euro Blue to ARS",
+        "image": "https://imgur.com/XQx4XGB.png",
+        "description": "Llamada a la api de bluelytics para tener el valor del Dolar o Euro BLUE al momento",
+        "finish": true,
+        "technologies":["React","Fetch","CSS"],
+        "date_finish": "9/11/2023",
+        "repository" : "https://github.com/Samuelarag1/Dolar"
+    },
+    {
+        "id": 2,
+        "name": "Rick and Morty API",
+        "image": "https://imgur.com/WhKsbWt.png",
+        "description": "Proyecto FullStack con stack PERN",
+        "finish": false,
+        "technologies": ["React","Sequelize", "Css", "Fetch"],
+        "date_finish": "in course",
+        "repository" : "https://github.com/Samuelarag1/RickAndMorty"
+    },
+    {
+        "id": 3,
+        "name": "Formula 1 API",
+        "image": "https://imgur.com/XB9g7JK.png",
+        "description": "Proyecto FullStack con stack PERN",
+        "finish": false,
+        "technologies": ["React","Sequelize", "Css", "Fetch"],
+        "date_finish": "in course",
+        "repository" : "https://github.com/Samuelarag1/Drivers-PI"
+        },
+    {
+        "id": 4,
+        "name": "Pokemon API",
+        "image": "https://imgur.com/FnKJcCG.png",
+        "description": "Proyecto FullStack con stack PERN",
+        "finish": true,
+        "technologies": ["React","Sequelize", "Css", "Fetch"],
+        "date_finish": "in course",
+        "repository" : "https://github.com/Samuelarag1/Pokemon"
+    }
+
+
+]
+}

@@ -83,37 +83,41 @@ const SecondPage = () => {
       </div>
 
       <div id="active" className={active ? styles.active : styles.inactive}>
-        <button onClick={handleOnClose}>X</button>
-        <p>
-          Informacion adicional sobre:
-          <span className={styles.datos}> {app.name}</span>
-        </p>
-        <img src={app.img} width="100px" alt="img-apps" />
-
-        {app.experience !== "" ? (
+        <div className={styles.active_inner}>
+          <div className={styles.circle}></div>
+          <button onClick={handleOnClose}>X</button>
           <p>
-            Experiencia: <span className={styles.datos}>{app.experience}</span>
+            Informacion adicional sobre:
+            <span className={styles.datos}> {app.name}</span>
           </p>
-        ) : (
-          ""
-        )}
+          <img src={app.img} width="100px" alt="img-apps" />
+          {app.experience !== "" ? (
+            <p>
+              Experiencia:{" "}
+              <span className={styles.datos}>{app.experience}</span>
+            </p>
+          ) : (
+            ""
+          )}
 
-        {app.caracteristics !== "" ? (
-          <p>
-            Framework/Librerias:
-            <span className={styles.datos}>{app.caracteristics}</span>
-          </p>
-        ) : (
-          ""
-        )}
+          {app.caracteristics !== "" ? (
+            <p>
+              Framework/Librerias:
+              <span className={styles.datos}>{app.caracteristics}</span>
+            </p>
+          ) : (
+            ""
+          )}
 
-        {app.improve !== "" ? (
-          <p>
-            A mejorar: <span className={styles.datos}>{app.improve}</span>
-          </p>
-        ) : (
-          ""
-        )}
+          {app.improve !== "" ? (
+            <p>
+              A mejorar: <span className={styles.datos}>{app.improve}</span>
+            </p>
+          ) : (
+            ""
+          )}
+          <div className={styles.circle}></div>
+        </div>
       </div>
 
       <div className={styles.skills}>
