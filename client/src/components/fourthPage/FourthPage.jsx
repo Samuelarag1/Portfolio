@@ -9,15 +9,17 @@ const FourthPage = () => {
 
   return (
     <div className={styles.container} id="page-4">
-      <h1>Gracias por Visitar mi pagina web personal!</h1>
-      <p>
-        Si deseas contactarte conmigo. Te dejo un botón que te redirigira a
-        Gmail para que envies tu propuesta!
-      </p>
+      <div>
+        <h1>Gracias por Visitar mi pagina web personal!</h1>
+        <p>
+          Si deseas contactarte conmigo. Te dejo un botón que te redirigira a
+          Gmail para que envies tu propuesta!
+        </p>
 
-      <button onClick={enviarCorreo} target="_blank">
-        Enviar un Email!
-      </button>
+        <button onClick={enviarCorreo} target="_blank">
+          Enviar un Email!
+        </button>
+      </div>
     </div>
   );
 };
