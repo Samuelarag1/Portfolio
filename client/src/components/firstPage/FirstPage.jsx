@@ -13,9 +13,9 @@ const FirstPage = () => {
         <h1>Samuel Aragon</h1>
         <h4>Desarrollador Full-Stack</h4>
         <p>
-          Tengo 23 años, soy estudiante de Ing. en Computación. Realicé un
-          bootcamp FullStack y tambien adquiri conocimientos de manera
-          autodidacta. Mi pasión por la tecnologia va mas allá de mis
+          Tengo 24 años, soy estudiante de Ing. en Computación. Adquiri mis
+          conocimientos de manera autodidacta, tambien cuento con experiencia
+          laboral en el campo. Mi pasión por la tecnologia va mas allá de mis
           conocimientos, estoy en constante aprendizaje y busqueda de nuevos
           objetivos en mi vida.
         </p>

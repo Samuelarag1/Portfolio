@@ -13,6 +13,7 @@
 .skills{
     display: flex;
     gap: 15rem;
+    margin-top: 10rem;
     @media (max-width:768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -107,12 +108,13 @@
     height: 454px;
     appearance: none;
     border: 0;
-    background: rgb(5, 5, 22);
+    background: rgba(177, 160, 160, 0.027);
+    /* filter: blur(1px); */
     font-size: 18px;
     font-weight: 500;
     color: #fff;
-    border-radius: 15px;
-    border: 2px solid white;
+    border-radius: 0 15px 0 15px;
+    border: 2px solid black;
     box-shadow: 10px 10px 10px black;
     display: flex;
     flex-direction: column;
@@ -123,4 +125,9 @@
         width: 300px;
         margin: auto;
     }
+   }
+
+   .active_inner span {
+    font-weight: bold;
+    color: white;
    }

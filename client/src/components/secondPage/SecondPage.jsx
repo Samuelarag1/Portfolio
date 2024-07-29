@@ -17,7 +17,7 @@ const SecondPage = () => {
       id: 1,
       name: "React",
       img: "physics.png",
-      experience: "1 año",
+      experience: "2 años",
       caracteristics: "React-router",
       improve: "Redux - Class Component",
     },
@@ -25,7 +25,7 @@ const SecondPage = () => {
       id: 2,
       name: "Css",
       img: "css-3.png",
-      experience: "1 año",
+      experience: "2 años",
       caracteristics: "",
       improve: "Animations, keyframes",
     },
@@ -33,7 +33,7 @@ const SecondPage = () => {
       id: 3,
       name: "Html",
       img: "html-5.png",
-      experience: "2 años",
+      experience: "3 años",
       caracteristics: "",
       improve: "Nuevas etiquetas - Selectors ",
     },
@@ -41,7 +41,7 @@ const SecondPage = () => {
       id: 4,
       name: "Sql",
       img: "sql.png",
-      experience: "3 meses",
+      experience: "6 meses",
       caracteristics: "postgres",
       improve: "Mejor manejo de las dinamicas",
     },
@@ -49,7 +49,7 @@ const SecondPage = () => {
       id: 5,
       name: "Node",
       img: "nodeJs.png",
-      experience: "3 meses",
+      experience: "1 año",
       caracteristics: "Express",
       improve: "",
     },
@@ -57,8 +57,8 @@ const SecondPage = () => {
       id: 6,
       name: "Typescript",
       img: "typescript.png",
-      experience: "Aprendiendo..",
-      caracteristics: "",
+      experience: "1 año",
+      caracteristics: "Uso de modelos, comprension de interfaces.",
       improve: "",
     },
   ];
@@ -84,8 +84,9 @@ const SecondPage = () => {
 
       <div id="active" className={active ? styles.active : styles.inactive}>
         <div className={styles.active_inner}>
-          <div className={styles.circle}></div>
-          <button onClick={handleOnClose}>X</button>
+          <button onClick={handleOnClose}>
+            <span>X</span>
+          </button>
           <p>
             Informacion adicional sobre:
             <span className={styles.datos}> {app.name}</span>
