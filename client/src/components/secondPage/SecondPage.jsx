@@ -84,7 +84,7 @@ const SecondPage = () => {
 
       <div id="active" className={active ? styles.active : styles.inactive}>
         <div className={styles.active_inner}>
-          <button onClick={handleOnClose}>
+          <button onClick={handleOnClose} className={styles.btnClose}>
             <span>X</span>
           </button>
           <p>
@@ -117,7 +117,6 @@ const SecondPage = () => {
           ) : (
             ""
           )}
-          <div className={styles.circle}></div>
         </div>
       </div>
 

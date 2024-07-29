@@ -47,7 +47,7 @@
     transform: scale(1.3);
     cursor: pointer;
 }
-.inactive{
+.inact  ive{
     visibility:hidden;
     height: 450px;
 }
@@ -57,16 +57,15 @@
 .active span{
     font-size: 2rem;
     margin:auto;
-
     @media (max-width:768px) {
         font-size: 1.4rem;
         margin:auto;
+        margin-top: 0;
     }
 }
 .active p {
     color: var(--Bone);
     font-size: 2rem;
-    margin: 2rem;
     @media (max-width:768px) {
         margin:2rem;
         font-size: 1.4rem;
@@ -85,10 +84,10 @@
     text-align: center;
     margin-top: 2rem;
     @media (max-width:768px) {
-        margin-bottom: 1rem;
-        height: 5rem;
-        width: 5rem;
+        height: 4rem;
+        width: 4rem;
 }
+
 
 }
 .active button:hover{
@@ -114,7 +113,7 @@
     font-weight: 500;
     color: #fff;
     border-radius: 0 15px 0 15px;
-    border: 2px solid black;
+    border: 2px solid white;
     box-shadow: 10px 10px 10px black;
     display: flex;
     flex-direction: column;
@@ -127,7 +126,22 @@
     }
    }
 
-   .active_inner span {
+   .btnClose span {
     font-weight: bold;
     color: white;
+    margin-bottom: 2rem;
    }
+
+   .active_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+   }
+
+
+.datos{
+    padding: 0;
+    margin: 0;
+}
