@@ -9,7 +9,6 @@ const SecondPage = () => {
     img: "",
     experience: "",
     caracteristics: "",
-    improve: "",
   });
 
   const myApps = [
@@ -19,7 +18,6 @@ const SecondPage = () => {
       img: "physics.png",
       experience: "2 años",
       caracteristics: "React-router",
-      improve: "Redux - Class Component",
     },
     {
       id: 2,
@@ -27,7 +25,6 @@ const SecondPage = () => {
       img: "css-3.png",
       experience: "2 años",
       caracteristics: "",
-      improve: "Animations, keyframes",
     },
     {
       id: 3,
@@ -35,7 +32,6 @@ const SecondPage = () => {
       img: "html-5.png",
       experience: "3 años",
       caracteristics: "",
-      improve: "Nuevas etiquetas - Selectors ",
     },
     {
       id: 4,
@@ -43,7 +39,6 @@ const SecondPage = () => {
       img: "sql.png",
       experience: "6 meses",
       caracteristics: "postgres",
-      improve: "Mejor manejo de las dinamicas",
     },
     {
       id: 5,
@@ -51,7 +46,6 @@ const SecondPage = () => {
       img: "nodeJs.png",
       experience: "1 año",
       caracteristics: "Express",
-      improve: "",
     },
     {
       id: 6,
@@ -59,7 +53,6 @@ const SecondPage = () => {
       img: "typescript.png",
       experience: "1 año",
       caracteristics: "Uso de modelos, comprension de interfaces.",
-      improve: "",
     },
   ];
 
@@ -87,36 +80,30 @@ const SecondPage = () => {
           <button onClick={handleOnClose} className={styles.btnClose}>
             <span>X</span>
           </button>
-          <p>
-            Informacion adicional sobre:
-            <span className={styles.datos}> {app.name}</span>
-          </p>
-          <img src={app.img} width="100px" alt="img-apps" />
-          {app.experience !== "" ? (
+          <div className={styles.infoAditional}>
             <p>
-              Experiencia:{" "}
-              <span className={styles.datos}>{app.experience}</span>
+              Informacion adicional sobre:
+              <span className={styles.datos}> {app.name}</span>
             </p>
-          ) : (
-            ""
-          )}
+            <img src={app.img} width="100px" alt="img-apps" />
+            {app.experience !== "" ? (
+              <p>
+                Experiencia:{" "}
+                <span className={styles.datos}>{app.experience}</span>
+              </p>
+            ) : (
+              ""
+            )}
 
-          {app.caracteristics !== "" ? (
-            <p>
-              Framework/Librerias:
-              <span className={styles.datos}>{app.caracteristics}</span>
-            </p>
-          ) : (
-            ""
-          )}
-
-          {app.improve !== "" ? (
-            <p>
-              A mejorar: <span className={styles.datos}>{app.improve}</span>
-            </p>
-          ) : (
-            ""
-          )}
+            {app.caracteristics !== "" ? (
+              <p>
+                Framework/Librerias:
+                <span className={styles.datos}>{app.caracteristics}</span>
+              </p>
+            ) : (
+              ""
+            )}
+          </div>
         </div>
       </div>
 
