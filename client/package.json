@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-email/render": "^0.0.9",
     "axios": "^1.6.0",
+    "force": "^0.0.3",
     "nodemailer": "^6.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
